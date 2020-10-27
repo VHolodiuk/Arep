@@ -1,0 +1,1068 @@
+/*==========  Desktop First  ==========*/
+/*
+
+@media only screen and (max-width : 1500px) 
+@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 992px)
+@media only screen and (max-width : 768px) 
+@media only screen and (max-width : 550px)
+
+*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1360px) {
+    header{
+        .menu-wrapper{
+            height: 52px;
+            align-items: center;
+            .list-item{
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .main-window-half{
+        .background-image{
+            &.happy{
+                background-image: url(../uploads/happy-hours_2.jpg);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 1200px){
+    .container{
+        padding: 0 30px;
+    }
+    header{
+        .logo-min{
+            left: 30px;
+        }
+        .link-wrapper{
+            right: 30px;
+        }
+        .menu-wrapper{
+            .list-item{
+                a{
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    .promotions{
+        .promotion-wrapper{
+            .promotion-content{
+                padding: 50px;
+            }
+        }
+    }
+    .cards-wrapper{
+        .wrap{
+            .title{
+                font-size: 70px;
+            }
+            .text{
+                font-size: 48px;
+            }
+        }
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px) {
+    header{
+        .container{
+            justify-content: space-between;
+        }
+        .burger{
+            display: flex;
+        }
+        .menu-wrapper{
+            display: none;
+            background-color: $red;
+            background-image: url(../uploads/background-red.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            border-radius: 0px;
+            justify-content: center;
+            .list-wrapper{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .list-item{
+                background: none;
+                border-radius: 26px;
+                    &:last-child{
+                        border-radius: 26px;
+                    }
+                    &:first-child{
+                        border-radius: 26px;
+                    }
+                a{
+                    border: none;
+                    font-size: 32px;
+                }
+            }
+        }
+        .link-wrapper{
+            display: none;
+        }
+        .logo-min{
+            position: static;
+            width: 40px;
+            height: 40px;
+        }
+        .inputs-wrapper{
+            .adress-ico{
+                width: 36px;
+                height: 36px;
+                img{
+                    width: 15px;
+                }
+            }
+        }
+        &.show{
+            .burger{
+                background: rgba($color: $white, $alpha: .1);
+                .lines{
+                    height: 13px;
+                    width: 12px;
+                    .line{
+                        display: none;
+                    }
+                    &::before{
+                        transform: rotate(45deg);
+                        width: 16px;
+                    }
+                    &::after{
+                        transform: rotate(-45deg);
+                        width: 16px;
+                    }
+                }
+            }
+            .menu-wrapper{
+                display: flex;
+                .list-item{
+                    margin-bottom: 10px;
+                }
+            }
+            .link-wrapper{
+                display: flex;
+                position: fixed;
+                right: unset;
+                left: 50%;
+                transform: translate(-50%);
+                bottom: 60px;
+                justify-content: center;
+                .list-item{
+                    background: $dark;
+                }
+            }
+        }
+    }
+    .dishes{
+        padding-bottom: 40px;
+        .dishes-tab{
+            .tab-content{
+                .title-wrapper{
+                    .name{
+                        font-size: 28px;
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                    .price{
+                        font-size: 28px;
+                    }
+                }
+                .description-wrapper{
+                    flex-wrap: wrap;
+                    .item-wrapper{
+                        width: 100%;
+                    }
+                    .text-wrapper{
+                        width: 100%;
+                    }
+                }
+                .cards.drinks{
+                    .card{
+                        width: 50%;
+                        &:not(:first-child){
+                            padding-left: 20px;
+                        }
+                        &:not(:last-child){
+                            padding-right: 20px;
+                        }
+                    }
+                    & :nth-child(odd).card{
+                        border-color: $grey !important;
+                    }
+                    & :nth-child(even).card{
+                        border-color: transparent !important;
+                    }
+                    .title-wrapper{
+                        .name{
+                            font-size: 28px;
+    
+                        }
+                        .price{
+                            font-size: 28px;
+                        }
+                        .dottets{
+                            top: 21px;
+                        }
+                    }
+                    .items-with-price{
+                        .title{
+                            font-size: 24px;
+                        }
+                        ul{
+                            font-size: 20px;
+                        }
+                        li{
+                            .price{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .list-wrapper{
+                        .list-item{
+                            font-size: 20px;
+                        }
+                    }
+                    .card.wine{
+                        .title{
+                            font-size: 28px;
+                        }
+                        .list-wrapper{
+                            font-size: 24px;
+                        }
+                        .name{
+                            font-size: 20px;
+                        }
+                        .dottets{
+                            top: 18px;
+                        }
+                        .price-wrap{
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                        .little-item{
+                            .price{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                .button-wrap{
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    .catering-menu{
+        .menu{
+            .menu-card{
+                width: 50%;
+            }
+            & :nth-child(3n).menu-card{
+                border-right: 1px dashed $grey;
+            }
+            & :nth-child(2n).menu-card{
+                border-right-color: transparent;
+            }
+        }
+    }
+}
+@media only screen and (max-width : 992px) {
+    header{
+        .welcome-popup{
+            .wrapper{
+                padding: 30px;
+                .popup-title{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .lunch{
+        .wrap{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+    .desserts{
+        .desserts-item{
+            width: 50%;
+            & :nth-child(even).card{
+                &::after{
+                    content: none;
+                }
+            }
+        }
+    }
+    .dishes{
+        .dishes-tab{
+            .tab-content{
+                .card{
+                    width: calc 50%;
+                    .img-wrapper{
+                        max-height: 250px;
+                    }
+                }
+                & :nth-child(even).card{
+                    margin-right: 0px;
+                }
+                .cards.dessert{
+                    .card{
+                        width: 50%;
+                    }
+                }
+            }
+            .tab-title{
+                min-height: 250px;
+                &.big{
+                    min-height: 350px;
+                }
+                .content{
+                    padding-bottom: 0px;
+                    .title{
+                        strong{
+                            font-size: 70px;
+                        }
+                    }
+                }
+                .button-more{
+                    bottom: 50px;
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            &:last-child{
+                .tab-title{
+                    .content{
+                        .title{
+                            strong{
+                                font-size: 48px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .happy-menu{
+        .cards{
+            .card{
+                width: 100%;
+                border-right: none;
+            }
+        }
+    }
+
+    .promotions{
+        .promotion-wrapper{
+            flex-wrap: wrap;
+            .promotion-content{
+                width: 100%;
+                order: -1;
+                padding: 30px;
+                .title{
+                    font-size: 48px;
+                    &.min{
+                        font-size: 48px;
+                    }
+                }
+                .sub-title{
+                    font-size: 24px;
+                    &.bigger{
+                        font-size: 24px;
+                    }
+                }
+                .text{
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            .promotion-img{
+                width: 100%;
+            }
+            .list-wrapper{
+                flex-direction: column;
+                width: 100%;
+            }
+            .review-wrapper{
+                padding-bottom: 50px;
+                .slick-arrow{
+                    display: none !important;
+                }
+                .slick-dots{
+                    display: flex;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    .cards-wrapper{
+        .wrap{
+            flex-wrap: wrap;
+            .img-wrapper{
+                width: 100%;
+                order: -1;
+            }
+            .content{
+                width: 100%;
+            }
+        }
+    }
+    .main-window-half{
+        .cards{
+            bottom: -30px;
+        }
+    }
+    .press{
+        .cards{
+            .card{
+                width: calc(50% - 15px);
+            }
+        }
+    }
+}
+/* Medium Devices */
+@media only screen and (max-width : 768px) {
+    .container{
+        padding: 0 30px;
+    }
+    header{
+        .logo-min{
+            left: 30px;
+        }
+        .link-wrapper{
+            right: 30px;
+        }
+    }
+    .main-window{   
+        .logo{
+            width: 160px;
+            height: auto;
+        }
+        .title{
+            font-size: 32px;
+            strong{
+                font-size: 48px;
+            }
+        }
+        .navigation-wrapper{
+            .list-item{
+                width: 100%;
+                font-size: 24px;
+            }
+        }
+        .backgrounds-slider{
+            .slick-arrow.slick-next{
+                right: 20px;
+            }
+            .slick-arrow.slick-prev{
+                left: 20px;
+            }
+        }
+    }
+    .main-window-half{
+        height: 20vh;
+        min-height: 200px;
+        .title{
+            font-size: 32px;
+            strong{
+                font-size: 48px;
+            }
+        }
+        .red{
+            border-radius: 16px;
+            font-size: 32px;
+            line-height: 1;
+            padding: 10px 10px;
+            br{
+                display: initial;
+            }
+        }
+    }
+    .welcome{
+        .container{
+            padding-top: 30px;
+            padding-bottom: 160px;
+        }
+        .logo{
+            display: none;
+        }
+        .welcome-title{
+            font-size: 48px;
+        }
+        .welcome-text{
+            font-size: 16px;
+            text-align: left;
+        }
+        .card-wrapper{
+            bottom: 00px;
+            .card{
+                max-height: 220px;
+            }
+        }
+    }
+    .contact{
+        .contact-title{
+            padding-top: 30px;
+            font-size: 48px;
+        }
+        .contact-wrapper{
+            .adress{
+                font-size: 32px;
+                text-align: center;
+            }
+            .map{
+                font-size: 16px;
+            }
+            .work-data{
+                font-size: 14px;
+                .list-wrapper{
+                    .list-item{
+                        font-size: 16px;
+                        .day{
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+            .wrap{
+                border: none;
+                padding: 0px;
+            }
+        }
+        .phone{
+            font-size: 24px;
+        }
+    }
+    .restaurant{
+        .images{
+            .img-wrapper{
+                width: 50%;
+            }
+            :nth-child(3),
+            :nth-child(4){
+                display: none;
+            }
+        }
+    }
+    footer{
+        .menu-wrapper{
+            .list-wrapper{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .list-item{
+                border-radius: 26px;
+                a{
+                    border: none;
+                }
+            }
+        }
+        .social-wrapper{
+            .list-wrapper{
+                .list-item{
+                    width: 36px;
+                    height: 36px;
+                    a{
+                        width: 13px;
+                    }
+                }
+            }
+        }
+        .scroll-to-top{
+            display: none;
+        }
+        .logo{
+            width: 130px;
+            height: 50px;
+        }
+    }
+
+    .delivery{
+        .title{
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        .company-wrapper{
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .desserts{
+        .desserts-item{
+            width: 100%;
+            .title{
+                font-size: 48px;
+            }
+            .sub-title{
+                font-size: 28px;
+            }
+            &:nth-child(even){
+                padding-left: 0px;
+                &::after{
+                    content: none;
+                }
+            }
+            &:nth-child(odd){
+                padding-right: 0px;
+                &::after{
+                    content: none;
+                }
+            }
+        }
+    }
+    .lunch{
+        .wrap{
+            .item{
+                .name-lunch{
+                    font-size: 48px;
+                    
+                }
+                .title-lunch{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .sides{
+        .title{
+            font-size: 48px;
+        }
+    }
+    .locations{
+        padding-bottom: 40px;
+        position: relative;
+        .location-title{
+            padding-top: 30px;
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        .contact-wrapper{
+            margin-bottom: 30px;
+            .map{
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            .work-data{
+                font-size: 14px;
+                .list-wrapper{
+                    .list-item{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .wrap{
+                border: none;
+                padding: 0px;
+                flex-direction: column;
+                .description{
+                    width: 100%;
+                    order: -1;
+                }
+                .map-frame{
+                    width: 100%;
+                }
+                .adress{
+                    font-size: 32px;
+                    text-align: center;
+                }
+                .iframe{
+                    width: 100%;
+                }
+            }
+
+        }
+        .phone{
+            font-size: 24px;
+        }
+    }
+    .form-section{
+        .location-title{
+            font-size: 42px;
+        }
+        .form{
+            .input-wrapper{
+                width: 100%;
+            }
+        }
+    }
+    .dishes{
+        .dishes-tab{
+            .tab-content{
+                margin-bottom: 20px;
+                padding: 0px 20px 20px 20px ;
+                .img-wrapper{
+                    overflow: hidden;
+                    max-height: 400px;
+                }
+                .cards{
+                    .card{
+                        width: 100% !important;
+                        padding: 0px !important;
+                        border: none !important;
+                        margin-right: unset !important;
+                    }
+                    &.empanadaz{
+                        .card{
+                            &:not(:last-child){
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                    &.drinks{
+                        .card.wine{
+                            .title.hiden{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .description-wrapper{
+                    margin-bottom: 40px;
+                    .item-wrapper{
+                        .item{
+                            font-size: 20px;
+                            img{
+                                height: 36px;
+                            }
+                        }
+                    }
+                    .text-wrapper{
+                        .text{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .cards.empanadaz{
+                    .title-dishes{
+                        font-size: 28px;
+                    }
+                    .small-item{
+                        .price{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .cards.dessert{
+                    .title-wrapper{
+                        .name{
+                            font-size: 28px;
+                        }
+                        .text{
+                            font-size: 20px;
+                        }
+                    }
+                    .list-item{
+                        .name{
+                            font-size: 20px;
+                        }
+                        .price{
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .texts-wrapper{
+                    font-size: 28px;
+                }
+                .added-list{
+                    .added-item{
+                        .price{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .cards.sides{
+                    .list-item{
+                        .name{
+                            font-size: 20px;
+                        }
+                        .price{
+                            font-size: 20px;
+                        }
+                        .dishes{
+                            top: 17px;
+                        }
+                    }
+                }
+            }
+            .tab-title{
+                min-height: 200px;    
+                &.big{
+                    min-height: 250px;
+                }
+                .background{
+                    padding: 20px;
+                }
+                .content{
+                    padding: 0 20px;
+                    .title{
+                        font-size: 24px;
+                        strong{
+                            font-size: 48px;
+                        }
+                    }
+                }
+            }
+            &:last-child{
+                .tab-title{
+                    .content{
+                        .title{
+                            strong{
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .catering-form{
+        .title{
+            font-size: 48px;
+        }
+        .input-wrapper{
+            width: 100%;
+        }
+    }
+    .catering-menu{
+        padding: 60px 0px 40px;
+        .title{
+            font-size: 70px;
+            margin-bottom: 40px;
+        }
+        .menu{
+            .menu-card{
+                width: 100%;
+                border-color: transparent;
+            }
+            & :nth-child(3n).menu-card{
+                border-color: transparent;
+            }
+        }
+    }
+    .order-form{
+        .title{
+            font-size: 48px;
+        }
+        .input-wrapper{
+            width: 100%;
+            &.small{
+                width: calc(50% - 15px);
+                margin-right: 0px;
+            }
+        }
+        .group-small{
+            justify-content: space-between;
+        }
+    }
+
+    .happy-menu{
+        padding: 30px 0px;
+        .cards{
+            .card{
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+            .title-wrapper{
+                margin-bottom: 30px;
+            }
+            .title{
+                font-size: 32px;
+            }
+            .name{
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .description{
+                margin-bottom: 20px;
+            }
+
+        }
+        .red{
+            font-size: 24px;
+        }
+        .text-wrapper{
+            .title{
+                font-size: 48px;
+                span{
+                    font-size: 32px;
+                }
+            }
+            .text{
+                font-size: 24px;
+            }
+        }
+    }
+    .about-welcome{
+        padding: 30px 0;
+        .title{
+            font-size: 48px;
+        }
+        .text{
+            font-size: 16px;
+        }
+    }
+    .follow-us{
+        padding: 50px 0;
+        .title{
+            font-size: 48px;
+        }
+    }
+    .about-video{
+        .title{
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+    }
+    .press{
+        padding: 30px;
+        .title{
+            font-size: 48px;
+        }
+    }
+    .location-wrapper{
+        .title{
+            font-size: 48px;
+            min-width: max-content;
+        }
+    }
+    .cards-wrapper{
+        .wrap{
+            .title{
+                font-size: 48px;
+            }
+            .text{
+                font-size: 32px;
+            }
+        }
+    }
+
+}
+@media only screen and (max-width : 570px) {
+    header{
+        .welcome-popup{
+            .wrapper{
+                padding: 10px;
+                .popup-title{
+                    font-size: 32px;
+                }
+                .thanks-text{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .main-window-half .cards {
+        bottom: -10px;
+    }
+    .press{
+        .cards{
+            .card{
+                width: 100%;
+            }
+        }
+    }
+    .dishes .dishes-tab{
+        .tab-title{
+            min-height: 150px;
+            padding-bottom: 20px;
+            &.big{
+                min-height: 150px;
+            }
+            .content{
+                padding-bottom: 50px;
+                .title{
+                    font-size: 20px;
+                    strong{
+                        font-size: 32px;
+                    }
+                }
+            }
+            
+            .button-more{
+                bottom: 40px;
+            }
+        }
+        &:last-child{
+            .tab-title{
+                .content{
+                    .title{
+                        font-size: 16px;
+                        strong{
+                            font-size: 24px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 400px) {
+
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body{
+        display: block;
+    }
+    .dishes{
+        .dishes-item{
+            .title-wrapper{
+                .name-dishes{
+                    display: ruby;
+                }
+            }
+        }
+        .descriptions{
+            .list-wrapper{
+                .list-item{
+                    display: ruby;
+                }
+            }
+        }   
+    }
+    .desserts{
+        .desserts-item{
+            .list-wrapper{
+                .list-item{
+                    .name{
+                        display: block;
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

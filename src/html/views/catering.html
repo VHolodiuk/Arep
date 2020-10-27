@@ -1,0 +1,444 @@
+<% var data = {
+    title: "Arepazo",
+    
+    home: " class='list-item'",
+    menu: " class='list-item'",
+    order: " class='list-item'",
+    about: " class='list-item'",
+    contact: " class='list-item'",
+    happy: " class='list-item'",
+    catering: " class='list-item active'",
+
+    main: " class=''",
+
+  };
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="main-window-half">
+    <div class="background-image">
+      <img src="../../uploads/bground_catering.jpg" alt="">
+    </div>
+    <div class="container">
+      <h1 class="title">
+        <strong>Catering & Parties</strong>
+      </h1>
+    </div>
+</section>
+
+<section class="catering-menu">
+    <div class="container">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FArepazo%2Fvideos%2F744147996107717%2F&show_text=0&width=734" width="950" height="535" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+    </div>
+    <a href="https://direct.chownow.com/order/21487/locations" class="button button-order" target="_blank">Order Catering</a>
+    <h2 class="title">Catering menu</h2>
+    <div class="menu">
+        <div class="menu-card">
+            <h3 class="card-title">
+                Salads
+            </h3>
+            <p class="description">* Each serving is for 8-10 people</p>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Avocado bean salad</p>
+                    <div class="dottets"></div>
+                    <p class="price">$90</p>
+                    <p class="description">Green leaf lettuce, pinto beans, avocado, tomatoes, and crispy tortilla chips</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Add neat / Veggies</p>
+                    <ul class="min-list">
+                        <li class="list-item">
+                            <p class="name">
+                                Grilled Veggies
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$30</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Shredded Chicken
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$60</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Shredded Pork
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$60</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Shredded Beef
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$70</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Grilled Steak
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$70</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Roasted Salmon
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$70</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card">
+            <h3 class="card-title">
+                Bar latino premium
+            </h3>
+            <p class="description">* Each serving is for 8-10 people</p>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Tostada</p>
+                    <div class="dottets"></div>
+                    <p class="price">$140</p>
+                    <p class="description">Corn tostada, black beans, rice, lettuce, plantain, mozzarella-provolone, avocado, sour cream, pico de gallo. Choice of shredded pork, beef chicken or vegetarian</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Pabellón</p>
+                    <div class="dottets"></div>
+                    <p class="price">$130</p>
+                    <p class="description">Rice, black beans, shredded beef, fried plantains, and arepitas</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Lomo saltado</p>
+                    <div class="dottets"></div>
+                    <p class="price">$160</p>
+                    <p class="description">Grilled steak sautéed with wine and soy sauce, onion, tomatoes, spanish potato fries. Served with rice, plantains, and avocado</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Fish tacos</p>
+                    <div class="dottets"></div>
+                    <p class="price">$130</p>
+                    <p class="description">Flour tortillas with breaded cod, green leaf lettuce, chipotle sauce, avocado, and pico de gallo</p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card">
+            <h3 class="card-title">
+                <div class="name">Arepa bar</div>
+                <div class="dottets"></div>
+                <p class="price">$100</p>
+            </h3>
+            <p class="description">This bar brings 10 prefilled Arepas with the protein of you choice. Just add your favorite toppings</p>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Choose your protein</p>
+                    <ul class="min-list">
+                        <li class="list-item">
+                            <p class="name">
+                                Shredded Chicken
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Shredded Pork
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Shredded Beef
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$10</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Veggie
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <p class="name">Choose up to 3 toppings</p>
+                    <ul class="min-list">
+                        <li class="list-item">
+                            <p class="name">
+                                Beans
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Pico de gallo
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Green leaf lettuce
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Mozzarella-provolone
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <p class="name">Add Extras</p>
+                    <ul class="min-list">
+                        <li class="list-item">
+                            <p class="name">
+                                Avocado Side
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$10</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card">
+            <h3 class="card-title">
+                Aperitivos
+            </h3>
+            <p class="description">* Each serving is for 8-10 people</p>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Picada</p>
+                    <div class="dottets"></div>
+                    <p class="price">$45</p>
+                    <p class="description">Chopped pieces of colombian chorizo, chicharron and steak, tostones and yuca frita.</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Tostones con guacamole</p>
+                    <div class="dottets"></div>
+                    <p class="price">$31</p>
+                    <p class="description">Fried green plantains and guacamole</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Venezuelan tequeños</p>
+                    <div class="dottets"></div>
+                    <p class="price">$20</p>
+                    <p class="description">White cheese wrapped in sweet pastry dough, deep fried and served with cilantro sauce, 12 pieces</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Venezuelan empanaditas</p>
+                    <div class="dottets"></div>
+                    <p class="price">$40</p>
+                    <p class="description">Cornmeal empanadas - beef, chicken, black bean and cheese, 10 pieces</p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card no-border">
+            <h3 class="card-title">
+                Sides
+            </h3>
+            <p class="description">* Each serving is for 8-10 people</p>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Rice</p>
+                    <div class="dottets"></div>
+                    <p class="price">$20</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Beans</p>
+                    <div class="dottets"></div>
+                    <p class="price">$20</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Plantains</p>
+                    <div class="dottets"></div>
+                    <p class="price">$25</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Pico de gallo</p>
+                    <div class="dottets"></div>
+                    <p class="price">$20</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Lettuce</p>
+                    <div class="dottets"></div>
+                    <p class="price">$15</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Mozzarella-Provolone</p>
+                    <div class="dottets"></div>
+                    <p class="price">$17</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Guacamole</p>
+                    <div class="dottets"></div>
+                    <p class="price">$50</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Arepitas</p>
+                    <div class="dottets"></div>
+                    <p class="price">$20</p>
+                    <p class="description">25 pieces</p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card ">
+            <h3 class="card-title hidden">
+                Sides
+            </h3>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Tostones</p>
+                    <div class="dottets"></div>
+                    <p class="price">$35</p>
+                    <p class="description">32 pieces</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Yuca</p>
+                    <div class="dottets"></div>
+                    <p class="price">$35</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Grilled Veggies</p>
+                    <div class="dottets"></div>
+                    <p class="price">$30</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Spanish potato fries</p>
+                    <div class="dottets"></div>
+                    <p class="price">$25</p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card ">
+            <h3 class="card-title">
+                Jugos Naturales
+            </h3>
+            <p class="description">Get 16 oz Cup of your favorite natural juice mixed with milk or water:</p>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Guanabana</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Passion Fruit</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Blackberry</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Mango-guava</p>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card ">
+            <h3 class="card-title">
+                Desserts
+            </h3>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Flan</p>
+                    <p class="description">Serves 10 people</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Tres Letches Cake</p>
+                    <ul class="min-list">
+                        <li class="list-item">
+                            <p class="name">
+                                Small
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$40</p>
+                            <p class="description">Serves 10-12 people</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">
+                                Large
+                            </p>
+                            <div class="dottets"></div>
+                            <p class="price">+$60</p>
+                            <p class="description">Serves 10-12 people</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-card ">
+            <h3 class="card-title">
+                Drinks
+            </h3>
+            <ul class="list-wrapper">
+                <li class="list-item">
+                    <p class="name">Beer pitcher</p>
+                    <div class="dottets"></div>
+                    <p class="price">$16</p>
+                    <p class="description">Modelo - Pacifico - XX Amber</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">Sangria Party dispenser</p>
+                    <div class="dottets"></div>
+                    <p class="price">$200</p>
+                    <p class="description">Red or white sangria aproximately 40 glasses</p>
+                </li>
+                <li class="list-item">
+                    <p class="name">House margarita party dispenser</p>
+                    <div class="dottets"></div>
+                    <p class="price">$175</p>
+                    <p class="description">Approximately 40 glasses</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="catering-form">
+    <div class="container">
+        <h2 class="title">What are your plans? We’re here to help!</h2>
+        <p class="description">
+            *To ensure that we can execute your order we will require to receive the order 2 days in advance.
+        </p>
+        <form action="" class="form">
+            <div class="input-wrapper">
+                <label for="name">Your Name *</label>
+                <input type="text" name="name" id="name" required>
+              </div>
+            <div class="input-wrapper">
+                <label for="mail">Your Email *</label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div class="input-wrapper">
+                <label for="code">Promo code</label>
+                <input type="text" name="code" id="code">
+            </div>
+            <div class="input-wrapper">
+                <label for="location">Which Location *</label>
+                <div class="custom-select">
+                    <div class="select-items">
+                    </div>
+                    <select name="location" id="location" required>
+                        <option value="Brewery District">Brewery District</option>
+                        <option value="Gahanna">Gahanna</option>
+                    </select>
+                  </div>
+            </div>
+            <div class="textarea-wrapper">
+                <label for="">Message*</label>
+                <textarea name="" id="" class="message"></textarea>
+            </div>
+            <div class="button-wrapper">
+                <button class="button">Submit</button>
+                <p class="require">* Required fields</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="restaurant">
+    <div class="images">
+      <div class="img-wrapper"><img src="../../uploads/restaurant_1.jpg" alt=""></div>
+      <div class="img-wrapper"><img src="../../uploads/restaurant_2.jpg" alt=""></div>
+      <div class="img-wrapper"><img src="../../uploads/restaurant_3.jpg" alt=""></div>
+      <div class="img-wrapper"><img src="../../uploads/restaurant_4.jpg" alt=""></div>
+    </div>
+    <a href="" class="link">@arepazorestaurants</a>
+  </section>
+    
+  <%= _.template(require('./../includes/footer.html').default)(data) %>

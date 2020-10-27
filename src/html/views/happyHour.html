@@ -1,0 +1,128 @@
+<% var data = {
+    title: "Arepazo",
+    
+    home: " class='list-item'",
+    menu: " class='list-item'",
+    order: " class='list-item'",
+    about: " class='list-item'",
+    contact: " class='list-item'",
+    happy: " class='list-item active'",
+    catering: " class='list-item'",
+
+    main: " class=''",
+
+  };
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="main-window-half full">
+  <div class="background-image happy">
+  </div>
+  <div class="container">
+    <h1 class="title">
+      <strong>Happy hour</strong><br>
+      <span class="red">monday-friday <br> 5:00 pm-7:00 pm</span>
+    </h1>
+  </div>
+</section>
+
+<section class="happy-menu">
+  <div class="cards">
+    <div class="card">
+      <div class="title-wrapper">
+        <p class="title">Appetizers</p>
+        <p class="price red">
+          $5
+        </p>
+      </div>
+      <p class="name">
+        tequenos
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p class="name">
+        yuca frita
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p class="name">
+        papa criolla
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="card">
+      <div class="title-wrapper">
+        <p class="title">Cocktails</p>
+        <p class="price red">
+          $5
+        </p>
+      </div>
+      <p class="name">
+        Margarita
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p class="name">
+        red sangria
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p class="name">
+        white sangria
+      </p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+  <div class="text-wrapper">
+    <p class="title">
+      <span class="red">$1 OFF</span>
+      draft beer & wine glass
+    </p>
+    <a class="text" href="menu.html#wine">
+      Ask your server for our current draft beer list
+      See <span>Wine list</span> here
+    </a>
+  </div>
+
+</section>
+
+<section class="cards-wrapper">
+  <div class="wrap red">
+    <div class="img-wrapper">
+      <img src="../../uploads/margarita.jpg" alt="">
+    </div>
+    <div class="content">
+      <p class="title">Margarita Monday </p>
+      <p class="text">$5 margaritas all day</p>
+    </div>
+  </div>
+  <div class="wrap white">
+    <div class="content">
+      <p class="title">Wine down Thursday</p>
+      <a class="text" href="menu.html#wine"><span>1/2</span> wine bottles all day</a>
+    </div>
+    <div class="img-wrapper">
+      <img src="../../uploads/wines.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="restaurant">
+  <div class="images">
+    <div class="img-wrapper"><img src="../../uploads/restaurant_1.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_2.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_3.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_4.jpg" alt=""></div>
+  </div>
+  <a href="" class="link">@arepazorestaurants</a>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

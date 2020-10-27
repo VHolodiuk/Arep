@@ -1,0 +1,290 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    @include basikText;
+    &:before,
+    &:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+[type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring, button:-moz-focusring{
+    outline: none !important;
+}
+
+html.hidden {
+    overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    display: flex;
+    color: $black;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+select,
+a,
+button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+input {
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,i,b,blockquote,a,strong{
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
+  margin: 0px;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+    &.padding{
+        padding-top: 100vh;
+    }
+}
+
+section{
+    display: flex;
+    max-width: 100%;
+    background: $white;
+    z-index: 2;
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 100px;
+    width: 1340px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list{
+    height: 100%;
+}
+
+.button{
+    @include button;
+    transition: $transition;
+    &.white{
+        background: $white;
+        color: $red;
+    }
+    &:hover{
+        background: $redDark;
+        color: $white;
+    }
+    img{
+        height: 24px;
+        width: auto;
+        padding-right: 10px;
+    }
+    a{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+//------------------------------------------------------------------------------------------------///
+.wpforms-container{
+    width: 100%;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form{
+    width: 100%;
+}
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit],
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button,
+.button {
+    padding: 12px 30px;
+    min-width: 160px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    min-height: 52px;
+    margin: 0 10px;
+    border-radius: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #d75948;
+    font-family: Staatliches, cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all .5s linear 0s;
+    -o-transition: all .5s linear 0s;
+    transition: all .5s linear 0s;
+    border: none;
+}
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:hover,
+div.wpforms-container-full .wpforms-form .wpforms-submit-container button:hover,
+.button:hover{
+    border: none;
+    background: #d75948;
+}
+.form-section div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit],
+.form-section div.wpforms-container-full .wpforms-form .wpforms-submit-container button{
+    background: #202020;
+}
+
+div.wpforms-container-full .wpforms-form .input-wrapper input,
+div.wpforms-container-full .wpforms-form input[type=text],
+div.wpforms-container-full .wpforms-form .input-wrapper select,
+.form-section .form .input-wrapper input {
+    border-radius: 26px !important;
+    border: 1px solid #ddddde !important;
+    height: 52px !important;
+    padding: 8px 12px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    color: #202020 !important;
+    background: #fff !important;
+    font-size: 16px !important
+}
+div.wpforms-container-full .wpforms-form .input-wrapper input::-webkit-input-placeholder,
+div.wpforms-container-full .wpforms-form .input-wrapper input[type=text]::-webkit-input-placeholder,
+.form-section .form .input-wrapper input::-webkit-input-placeholder {
+    font-family: Roboto Condensed, sans-serif !important;
+    font-size: 16px !important;
+    color: #ddddde !important;
+    line-height: 1.2 !important
+}
+div.wpforms-container-full .wpforms-form .input-wrapper input::-moz-placeholder,
+div.wpforms-container-full .wpforms-form .input-wrapper input[type=text]::-moz-placeholder,
+.form-section .form .input-wrapper input::-moz-placeholder {
+    font-family: Roboto Condensed, sans-serif !important;
+    font-size: 16px !important;
+    color: #ddddde !important;
+    line-height: 1.2 !important
+}
+div.wpforms-container-full .wpforms-form .input-wrapper input::-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form .input-wrapper input[type=text]::-ms-input-placeholder,
+.form-section .form .input-wrapper input:-ms-input-placeholder {
+    font-family: Roboto Condensed, sans-serif !important;
+    font-size: 16px !important;
+    color: #ddddde !important;
+    line-height: 1.2 !important
+}
+div.wpforms-container-full .wpforms-form .input-wrapper input::-ms-input-placeholder,
+div.wpforms-container-full .wpforms-form .input-wrapper input[type=text]::-ms-input-placeholder,
+.form-section .form .input-wrapper input::-ms-input-placeholder {
+    font-family: Roboto Condensed, sans-serif !important;
+    font-size: 16px !important;
+    color: #ddddde !important;
+    line-height: 1.2 !important
+}
+div.wpforms-container-full .wpforms-form .input-wrapper input::placeholder,
+div.wpforms-container-full .wpforms-form .input-wrapper input[type=text]::placeholder,
+.form-section .form .input-wrapper input::placeholder {
+    font-family: Roboto Condensed, sans-serif !important;
+    font-size: 16px !important;
+    color: #ddddde !important;
+    line-height: 1.2 !important
+}
+div.wpforms-container-full .wpforms-form .iti__country-name{
+    color: #202020 !important;
+}
+
+.order-form div.wpforms-container-full .wpforms-form .wpforms-field-label-inline,
+.order-form .card-amount label {
+    padding-bottom: 0;
+    font-size: 20px;
+    color: #202020;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer
+}
+
+
+//---------------------------------------------------------//
+
+.dottets{
+    border-bottom: 1px dashed $grey;
+    position: relative;
+    height: 1px;
+    top: 21px;
+    flex-grow: 2;
+}
+
+.wpforms-container{
+    width: 100%;
+    form{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    &.form{
+        width: 100%;
+    }
+}

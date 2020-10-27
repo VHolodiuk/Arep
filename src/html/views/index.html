@@ -1,0 +1,360 @@
+<% var data = {
+    title: "Arepazo",
+    
+    home: " class='list-item active'",
+    menu: " class='list-item'",
+    order: " class='list-item'",
+    about: " class='list-item'",
+    contact: " class='list-item'",
+    happy: " class='list-item'",
+    catering: " class='list-item'",
+    
+    main: " class='padding'",
+
+  };
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="main-window">
+  <div class="backgrounds-slider">
+    <div class="slider-item">
+      <div class="background-image">
+        <img src="../../uploads/bground.jpg" alt="">  
+      </div>
+      <div class="container">
+        <div class="logo">
+          <img src="../../img/logo.svg" alt="">
+        </div>
+        <h1 class="title">
+          <strong>
+            The Taste of <br>
+            Latin America</strong>
+        </h1>
+        <div class="navigation-wrapper">
+          <ul class="list-wrapper">
+            <li class="list-item"><a href="https://direct.chownow.com/order/21487/locations">Order Now</a></li>
+            <li class="list-item"><a href="menu.html">Menu</a></li>
+            <li class="list-item"><a href="orderCard.html">Gift Card</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slider-item">      
+      <div class="background-image">
+        <img src="../../uploads/bground2.jpg" alt="">  
+      </div>
+      <div class="container">
+        <h1 class="title">
+          <strong>Follow Us <br>
+            on social media</strong>
+        </h1>
+        <div class="navigation-wrapper">
+          <ul class="list-wrapper">
+            <li class="list-item"><a href=""><img src="../../img/social/instagram.svg" alt=""> Instagram</a></li>
+            <li class="list-item"><a href=""><img src="../../img/social/facebook.svg" alt=""> facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="welcome">
+  <div class="container">
+    <div class="logo">
+      <img src="../../img/logo.svg" alt="">
+    </div>
+    <h2 class="welcome-title">
+      Welcome to El Arepazo! 
+    </h2>
+    <p class="welcome-text">
+      We are a family owned restaurant that has been a staple in central Ohio for over 10 years. Our story began when us, Carlos and Carolina Gutierrez, originally from Venezuela and  Colombia, had the dream to bring Latin American flavors from our homelands to Columbus. The name Arepazo comes from the traditional Venezuelan grilled cornmeal patties, Arepas, which we started selling at the famous Latino Festival. Upon seeing the popularity of our booth, and with lots of positive feedback and encouragement, we decided to start our first small location in Pearl Alley, Downtown (now closed) which became the lunch spot for many working in the area. The combination of dishes from all over Latin America, with a special focus on Venezuelan and Colombian, turned out to be just what Columbus needed. 
+    </p>
+    <p class="welcome-text">
+      Around 2010, we decided it was time to open another location that would offer lunch and dinner, a full bar, and an expanded menu. After months of searching for just the right place to open our new location, we finally opened Arepazo Tapas and Wine in Gahanna which has become a local favorite, known for its delicious food, friendly staff, and warm neighborhood atmosphere. In 2014, we opened our newest location in the Brewery District Neighborhood which is a much larger location than the previous two, with two different dining rooms, a large bar, party and event space and with an industrial and artsy feel. Our goal is to continue cooking with passion, to provide our guests with an amazing gastronomic experience, and to celebrate the union of Latin American flavors and cultures in Columbus Ohio. 
+    </p>
+    <a href="about.html" class="button white">
+      Learn more
+    </a>
+  </div>
+  <div class="card-wrapper">
+    <div class="card"><img src="../../img/cards2x.png" alt=""></div>
+  </div>
+</section>
+
+<section class="promotions">
+  <div class="promotion-wrapper">
+    <div class="promotion-content">
+      <p class="title red">
+        Happy hour
+      </p>
+      <p class="sub-title">
+        Monday to Friday <br>
+        5:00 PM - 7:00 PM
+      </p>
+      <ul class="list-wrapper">
+        <li class="list-item"><span>$5</span>Appetizers</li>
+        <li class="list-item"><span>$5</span>Cocktails</li>
+        <li class="list-item"><span>$1</span>Off Draft Beer & Wine Glasses</li>
+      </ul>
+      <a href="happyHour.html" class="button">
+        Learn more
+      </a>
+    </div>
+    <div class="promotion-img">
+      <img src="../../uploads/promotion_1.jpg" alt="">
+    </div>
+  </div>
+  <div class="promotion-wrapper">
+    <div class="promotion-img">
+      <img src="../../uploads/promotion_2.jpg" alt="">
+    </div>
+    <div class="promotion-content catering">
+      <p class="title">
+        Catering
+      </p>
+      <p class="text">
+        Whether you are looking to host a party at our brewery district location in our private wine room, bar area or dining area, or if you want to carry out a large order from any of our locations for an event elsewhere, we can meet your needs! Send us a message with your catering request.
+      </p>
+      <a href="catering.html" class="button">
+        Learn more
+      </a>
+    </div>
+  </div>
+  <div class="promotion-wrapper">
+    <div class="promotion-content catering">
+      <p class="title green">
+        Cilantro sauce
+      </p>
+      <p class="sub-title">
+        Get a 12oz bottle of <span class="green">spicy or mild</span> cilantro sauce! <span class="red">$6.00</span>
+      </p>
+      <div class="review-wrapper">
+        <div class="review">
+          <div class="stars">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+          </div>
+          <p class="reviews-text">
+            ‘’The best sauce ever. I need a bottle in my fridge’’
+          </p>
+          <p class="reviews-name">
+            @internetuser
+          </p>
+        </div>
+        <div class="review">
+          <div class="stars">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+            <img src="../../img/star.svg" alt="">
+          </div>
+          <p class="reviews-text">
+            ‘’The best sauce ever. I need a bottle in my fridge’’
+          </p>
+          <p class="reviews-name">
+            @internetuser
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="promotion-img">
+      <img src="../../uploads/promotion_3.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="promotion-wrapper red">
+    <div class="promotion-img">
+      <img src="../../uploads/promotion_4.jpg" alt="">
+    </div>
+    <div class="promotion-content catering">
+      <p class="title">
+        Margarita Monday 
+      </p>
+      <p class="sub-title bigger">
+        <span class="">$5</span> margaritas all day
+      </p>
+    </div>
+  </div>
+  
+  <div class="promotion-wrapper white">
+    <div class="promotion-content catering">
+      <p class="title red">
+        Wine down Thursday
+      </p>
+      <p class="sub-title bigger">
+        <span class="red">1/2</span> wine bottles all day
+      </p>
+    </div>
+    <div class="promotion-img">
+      <img src="../../uploads/promotion_5.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="delivery">
+  <div class="container">
+    <h3 class="title">
+      Delivery Partners
+    </h3>
+    <div class="company-wrapper">
+      <div class="img-wrapper"><img src="../../uploads/company.jpg" alt=""></div>
+      <div class="img-wrapper"><img src="../../uploads/company_2.jpg" alt=""></div>
+      <div class="img-wrapper"><img src="../../uploads/company_3.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <h3 class="contact-title">
+      Choose your nearest restaurant
+    </h3>
+    <div class="contact-wrapper">
+      <div class="wrap">
+        <div class="map-img">
+          <img src="../../img/map.svg" alt="">
+        </div>
+        <h4 class="adress">
+          arepazo brewery district:
+        </h4>
+        <a class="map" href="https://g.page/arepazo?share" target="_blank">
+          515 S High street, Columbus OH
+          <span>Get Directions</span>
+        </a>
+        <div class="work-data">
+          <ul class="list-wrapper">
+            <li class="list-item">
+              <span class="day">Monday - Thursday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:00 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:00 pm
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <span class="day">Friday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:00 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:00 pm
+                </li>
+              </ul>
+            </li>
+            
+            <li class="list-item">
+              <span class="day">Saturday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  1:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+          </ul>
+          *Private room and reservations available at this location only
+        </div>
+        <a href="tel:(614) 914-8878" class="phone">(614) 914-8878</a>
+        <a href="menu.html" class="button white">
+          open menu
+        </a>
+      </div>     
+      <div class="wrap">
+        <div class="map-img">
+          <img src="../../img/map.svg" alt="">
+        </div>
+        <h4 class="adress">
+          arepazo gahanna:
+        </h4>
+        <a class="map" href="https://g.page/arepazo-tapas-and-wine?share" target="_blank">
+          93 N High street, Gahanna OH
+          <span>Get Directions</span>
+        </a>
+        <div class="work-data">
+          <ul class="list-wrapper">
+            <li class="list-item">
+              <span class="day">Monday - Thursday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:30 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:00 pm
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <span class="day">Friday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:30 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+            
+            <li class="list-item">
+              <span class="day">Saturday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  1:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+          </ul>
+          *No reservations available at this location
+        </div>
+        <a href="tel:(614) 471-7296" class="phone">(614) 471-7296</a>
+        <a href="menu.html" class="button white">
+          open menu
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="restaurant">
+  <div class="images">
+    <div class="img-wrapper"><img src="../../uploads/restaurant_1.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_2.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_3.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_4.jpg" alt=""></div>
+  </div>
+  <a href="" class="link">@arepazorestaurants</a>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,156 @@
+<% var data = {
+    title: "Arepazo",
+    
+    home: " class='list-item'",
+    menu: " class='list-item'",
+    about: " class='list-item active'",
+    order: " class='list-item'",
+    contact: " class='list-item'",
+    happy: " class='list-item'",
+    catering: " class='list-item'",
+
+    main: " class=''",
+  };
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="main-window-half">
+  <div class="background-image">
+    <img src="../../uploads/bground_about.jpg" alt="">
+  </div>
+  <div class="container">
+    <h1 class="title">
+      <strong>about Us</strong>
+    </h1>
+  </div>
+</section>
+
+<section class="about-welcome">
+  <div class="container">
+    <h2 class="title">
+      Welcome to El Arepazo!
+    </h2>
+    <p class="text">
+      We are a family owned restaurant that has been a staple in central Ohio for over 10 years. Our story began when us, Carlos and Carolina Gutierrez, originally from Venezuela and  Colombia, had the dream to bring Latin American flavors from our homelands to Columbus. The name Arepazo comes from the traditional Venezuelan grilled cornmeal patties, Arepas, which we started selling at the famous Latino Festival. Upon seeing the popularity of our booth, and with lots of positive feedback and encouragement, we decided to start our first small location in Pearl Alley, Downtown (now closed) which became the lunch spot for many working in the area. The combination of dishes from all over Latin America, with a special focus on Venezuelan and Colombian, turned out to be just what Columbus needed. 
+    </p>
+    <p class="text">
+      Around 2010, we decided it was time to open another location that would offer lunch and dinner, a full bar, and an expanded menu. After months of searching for just the right place to open our new location, we finally opened Arepazo Tapas and Wine in Gahanna which has become a local favorite, known for its delicious food, friendly staff, and warm neighborhood atmosphere. In 2014, we opened our newest location in the Brewery District Neighborhood which is a much larger location than the previous two, with two different dining rooms, a large bar, party and event space and with an industrial and artsy feel. Our goal is to continue cooking with passion, to provide our guests with an amazing gastronomic experience, and to celebrate the union of Latin American flavors and cultures in Columbus Ohio. 
+    </p>
+    <div class="about-slider">
+      <div class="about-item"><img src="../../uploads/about/img_1.jpg" alt=""></div>
+      <div class="about-item"><img src="../../uploads/about/img_1.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<section class="follow-us">
+  <div class="container">
+    <p class="title">
+      follow us on social media
+    </p>
+    <a href="" class="button"><img src="../../img/social/instagram.svg" alt="">Instagram</a>
+    <a href="https://www.facebook.com/Arepazo" class="button"><img src="../../img/social/facebook.svg" alt="">facebook</a>
+  </div>
+</section>
+
+<section class="about-video">
+  <div class="container">
+    <h2 class="title">
+      Videos
+    </h2>
+    <div class="video-slider">
+      <video class='video-item' width="100%" height="100%"  controls='controls' >
+        <source src="../../video/Videoleap-F982B794-4003-4A7A-B267-8A.MOV" >
+      </video>
+      <video class='video-item' width="100%" height="100%"  controls='controls' >
+        <source src="../../video/Videoleap-1.mp4" >
+      </video>
+
+      <!-- <div class="video-item">
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FArepazo%2Fvideos%2F744147996107717%2F&show_text=0&width=734"
+          width="734"
+          height="415"
+          style="border:none;overflow:hidden"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+          allowfullscreen="true"
+        ></iframe>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<section class="press">
+  <h2 class="title">
+    Press
+  </h2>
+  <div class="cards">
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="../../uploads/about/press_1.jpg" alt="">
+      </div>
+      <p class="date">September  24, 2020</p>
+      <p class="title">
+        Enjoy a socially-distanced backyard concert at Momentum House.
+      </p>
+      <p class="text">
+        Enjoy a socially-distanced backyard concert and Arepazo food at Momentum House, across from Creekside Plaza this Saturday, September 26th 6-8PM! Buy your tickets here!
+      </p>
+      <a href="" class="button">Read more</a>
+    </div>
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="../../uploads/about/Press_2.jpg" alt="">
+      </div>
+      <p class="date">September  23, 2020</p>
+      <p class="title">
+        Have you tried our Chilaquiles?
+      </p>
+      <p class="text">
+        Have you tried our Chilaquiles? Tortilla chips and vegetables mixed with your favorite protein and spicy tomato sauce topped with sour cream, avocado, and cheese and served with rice, beans, and plantains.
+      </p>
+      <a href="" class="button">Read more</a>
+    </div>
+    <div class="card">
+      <div class="img-wrapper">
+        <img src="../../uploads/about/Press_3.jpg" alt="">
+      </div>
+      <p class="date">September  19, 2020</p>
+      <p class="title">
+        Despacito Going to take it slowly with dis Mojito.
+      </p>
+      <p class="text">
+        Despacito Going to take it slowly with dis Mojito Visit any of our locations today! #happyhour 5-7PM.
+      </p>
+      <a href="" class="button">Read more</a>
+    </div>
+  </div>
+</section>
+
+<section class="location-wrapper">
+  <div class="background-image">
+    <img src="../../uploads/bground_location.jpg" alt="">  
+  </div>
+  <div class="container">
+    <p class="title">
+      See our locations
+    </p>
+    <a href="contactUs.html" class="button">
+      our locations
+    </a>
+  </div>
+</section>
+
+<section class="restaurant">
+  <div class="images">
+    <div class="img-wrapper"><img src="../../uploads/restaurant_1.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_2.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_3.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_4.jpg" alt=""></div>
+  </div>
+  <a href="" class="link">@arepazorestaurants</a>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,1165 @@
+<% var data = {
+    title: "Arepazo | Menu",
+    
+    home: " class='list-item'",
+    menu: " class='list-item active'",
+    about: " class='list-item'",
+    order: " class='list-item'",
+    contact: " class='list-item'",
+    happy: " class='list-item'",
+    catering: " class='list-item'",
+    
+    main: " class=''",
+  };
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="main-window-half">
+    <div class="background-image">
+      <img src="../../uploads/background-white.png" alt="">  
+    </div>
+    <div class="container">
+      <h1 class="title yellow">
+        <strong>Menu</strong><br>
+        The taste of latin america
+      </h1>
+    </div>
+</section>
+
+<section class="dishes">
+    <div class="dishes-tab hidden" id="drinks">
+        <div class="tab-title big">
+            <div class="background">
+                <img src="../../uploads/dishes/title_6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 class="title">
+                    <strong>drinks</strong>
+                </h2>
+            </div>
+            <div class="button-more">
+                <img src="../../img/angle-down-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="cards drinks">
+                <div class="card">
+                    <div class="title-wrapper">
+                        <p class="name">Cocktails</p>
+                        <div class="dottets"></div>
+                        <p class="price">$8</p>
+                    </div>
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            Classic Margaritta
+                            <p>Tequila, triple sec, lemon-lime-orange juice. Jumbo on the rocks</p>
+                        </li>
+                        <li class="list-item">
+                            Caipirinha
+                            <p>Cachaca rum, lime</p>
+                        </li>
+                        <li class="list-item">
+                            Guava Caipirinha
+                            <p>Cachaca rum, lime, guava puree</p>
+                        </li>
+                        <li class="list-item">
+                            Mango Martini
+                            <p>Mango vodka, tanqueray, agave nectar, mango juice, and a tajin spiced rim</p>
+                        </li>
+                        <li class="list-item">
+                            Pineapple Martini
+                            <p>Pineapple vodka, coconut rum, pineapple juice</p>
+                        </li>
+                        <li class="list-item">
+                            Mojito
+                            <p>White rum, lime, mint (pineapple, blackberry, or strawberry syrup)</p>
+                        </li>
+                        <li class="list-item">
+                            Cuba libre
+                            <p>Rum, coke, fresh lime</p>
+                        </li>
+                        <li class="list-item">
+                            Spiked horchata
+                            <p>Rumchata, fireball whiskey, cinnamon sugar</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="title-wrapper">
+                        <p class="name">Specialty Cocktails</p>
+                        <div class="dottets"></div>
+                        <p class="price">$10</p>
+                    </div>
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            Peruvian mule
+                            <p>Pisco porton, lime juice, ginger beer</p>
+                        </li>
+                        <li class="list-item">
+                            Ultimate peruvian margarita
+                            <p>Pisco porton, simple syrup, grand marnier, lemon-lime juices</p>
+                        </li>
+                        <li class="list-item">
+                            Smoky margarita
+                            <p>Vida mezcal, grand marnier, our house made sour mix, with a hint of smoke, salty/spicy rim</p>
+                        </li>
+                        <li class="list-item">
+                            Jalapeño margarita
+                            <p>Cazadores tequila, muddled jalapeño, grand marnierr, our house made sour mix, tajin spiced rim</p>
+                        </li>
+                    </ul>
+                    <ul class="items-with-price">
+                        <p class="title">House-made sangria</p>
+                        <p class="description">
+                        Juan Gil-Shania Monastrell Red/Jumilla-Shania White
+                        </p>
+                        <ul>
+                          <li>
+                            <p class="name">Glass</p>
+                            <div class="dottets"></div>
+                            <p class="price">$7</p>
+                          </li>
+                          <li>
+                            <p class="name">1/2 Liter</p>
+                            <div class="dottets"></div>
+                            <p class="price">$20</p>
+                          </li>
+                          <li>
+                            <p class="name">Liter</p>
+                            <div class="dottets"></div>
+                            <p class="price">$30</p>
+                          </li>
+                        </ul>
+                      </ul>
+                </div>
+                <div class="card">
+                    <div class="title-wrapper">
+                        <p class="name">Beer</p>
+                    </div>
+                    <ul class="items-with-price">
+                        <p class="title">Bottled</p>
+                        <ul>
+                            Imports
+                            <li>
+                                <p class="name">Dos Equis Lager</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Tecate</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Corona Extra</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Corona Light</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Corona Familiar</p>
+                                <div class="dottets"></div>
+                                <p class="price"><span>(32 OZ.) </span> $8</p>
+                            </li>
+                            <li>
+                                <p class="name">Victoria</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Negra Modelo</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Bohemia</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Red Stripe</p>
+                                <div class="dottets"></div>
+                                <p class="price">$3.50</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            Domestics
+                            <li>
+                                <p class="name">Budweiser</p>
+                                <div class="dottets"></div>
+                                <p class="price">$2.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Bud Light</p>
+                                <div class="dottets"></div>
+                                <p class="price">$2.50</p>
+                            </li>
+                            <li>
+                                <p class="name">Miller Lite</p>
+                                <div class="dottets"></div>
+                                <p class="price">$2.50</p>
+                            </li>
+                        </ul>
+                        <p class="title">Draft</p>
+                        <ul>
+                            <li>
+                                <p class="name">Import</p>
+                                <div class="dottets"></div>
+                                <p class="price">$5</p>
+                            </li>
+                            <li>
+                                <p class="name">Craft</p>
+                                <div class="dottets"></div>
+                                <p class="price">$6</p>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="card wine" id="wine">
+                    <p class="title">Wine</p>
+                    <ul class="list-wrapper">
+                        Red
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Prorocolo tempranillo, Spain</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$6</p>
+                                    <p class="bottle">$23</p>
+                                </div>
+                            </div>
+                            <p class="description">Wine enthusiasts’ #2 wine ot the year! Notes of ripe plum and dark fruits</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">La posta paulucci, malbec</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$9.5</p>
+                                    <p class="bottle">$37</p>
+                                </div>
+                            </div>
+                            <p class="description">Ripe plum and blackberry, wuth smoky note and a spicy, full bodied finish</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Vina Borgia Tinto garnacha, Spain</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$7</p>
+                                    <p class="bottle">$27</p>
+                                </div>
+                            </div>
+                            <p class="description">Classic garnacha! Fruity and soft with flavors of black cherry</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Apaltagua reserva, pinot noir, chile</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$8</p>
+                                    <p class="bottle">$31</p>
+                                </div>
+                            </div>
+                            <p class="description">Classic garnacha! Fruity and soft with flavors of black cherry</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Gota de arena, tempranillo, Spain</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$7</p>
+                                    <p class="bottle">$27</p>
+                                </div>
+                            </div>
+                            <p class="description">Classic garnacha! Fruity and soft with flavors of black cherry</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Atteca, old vine garnacha, Spain</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bottle">$45</p>
+                                </div>
+                            </div>
+                            <p class="description">Raspberry compote, blueberry, savory spice and mocha flavors</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Juan Gil, Monastrella, Spain</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bottle">$40</p>
+                                </div>
+                            </div>
+                            <p class="description">Raspberry compote, blueberry, savory spice and mocha flavors</p>                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="card wine">
+                    <p class="title hiden">1</p>
+                    <ul class="list-wrapper">
+                        White/sparkling
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Prorocolo blanco, Spain</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$6</p>
+                                    <p class="bottle">$23</p>
+                                </div>
+                            </div>
+                            <p class="description">Generous fruit with hints of pears. honeydew melon and citrus</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Avanti pinot grigio, italy</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$7</p>
+                                    <p class="bottle">$27</p>
+                                </div>
+                            </div>
+                            <p class="description">Light and crisp on the palate, with aromas of green apple and sweet citrus</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Albamar chardonnay, chile</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$8</p>
+                                    <p class="bottle">$31</p>
+                                </div>
+                            </div>
+                            <p class="description">Crisp with flavors of grapefruit, white peach and notes of lemongrass</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Hi def riesling, Germany</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$7</p>
+                                    <p class="bottle">$27</p>
+                                </div>
+                            </div>
+                            <p class="description">Lightly sweet and refreshing with flavors of peach and apricot. Clean finish</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">broadvent vinho verde, rose, portugal</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bocal">$7</p>
+                                    <p class="bottle">$27</p>
+                                </div>
+                            </div>
+                            <p class="description">Vibrant flavors of fresh strawberry, pomegranate and orange zest</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">Innocent bystander pink moscato, australia</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bottle">$27</p>
+                                </div>
+                            </div>
+                            <p class="description">Pink, fruity, fizzy and fun. Flavors of strawberry and apricot</p>                            
+                        </li>
+                        <li class="list-item">
+                            <div class="title-item">
+                                <p class="name">D’altieri moscato di asti, italy</p>
+                                <div class="dottets"></div>
+                                <div class="price-wrap">
+                                    <p class="bottle">$28</p>
+                                </div>
+                            </div>
+                            <p class="description">Delightfully sweet, sparkling and refreshing</p>                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-wrap">
+                    <button class="button button-close">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes-tab hidden" id="aperitivos">
+        <div class="tab-title big">
+            <div class="background">
+                <img src="../../uploads/dishes/title_1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 class="title">
+                    <strong>aperitivos</strong>
+                    Appetizers
+                </h2>
+            </div>
+            <div class="button-more">
+                <img src="../../img/angle-down-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="cards">
+                <div class="card big">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dishes_1_4.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Picada
+                        </p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img src="../../img/favorito.svg" class="ico" alt=""></div>
+                        <p class="name min">
+                            <span>(Serves up to 4)</span></p>
+                        <div class="dottets"></div>
+                        <p class="price">$20</p>
+                    </div>
+                    <p class="description">
+                        Chopped pieces of Colombian chorizo, chicharrón & steak, tostones & yuca frita
+                    </p>
+                </div>
+                <div class="card big">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dishes_1_1.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Venezuelan Empanaditas</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img class="ico" src="../../img/favorito.svg" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$12</p>
+                    </div>
+                    <p class="description">
+                        Three corn meal empanadas: 1 shredded beef, 1 shredded chicken, 2 black beans & cheese
+    *no substitutions allowed
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dishes_1_2.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Venezuelan tequeños</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Vegetarian</p> <img src="../../img/vegetarian.svg" class="ico" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$6</p>
+                    </div>
+                    <p class="description">
+                        White cheese wrapped in sweet pastry dough deep fried & served with our spicy cilantro sauce
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dishes_1_3.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Tostones con guacamole</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Vegetarian</p> <img src="../../img/vegetarian.svg" class="ico" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$8</p>
+                    </div>
+                    <p class="description">
+                        Three corn tortillas with grilled steak, onions and cilantro
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dishes_1_5.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Papa criolla</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Vegetarian</p> <img src="../../img/vegetarian.svg" class="ico" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$6</p>
+                    </div>
+                    <p class="description">
+                        Colombian potatoes garnished with cilantro, sea salt & lime
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dishes_1_6.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Steak taquitos</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Gluten Free</p> <img src="../../img/glutenFree.svg" class="ico" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$9</p>
+                    </div>
+                    <p class="description">
+                        Colombian potatoes garnished with cilantro, sea salt & lime
+                    </p>
+                </div>
+            </div>
+            <div class="description-wrapper">
+                <div class="item-wrapper">
+                    <p class="item"><img src="../../img/spicy.svg" alt="">- Spicy</p>
+                    <p class="item"><img src="../../img/vegetarian.svg" alt="">- Vegetarian</p>
+                    <p class="item"><img src="../../img/favorito.svg" alt="">- Favorito</p>
+                    <p class="item"><img src="../../img/glutenFree.svg" alt="">- Gluten free <span>*</span></p>
+                </div>
+                <div class="text-wrapper">
+                    <img src="../../img/glutenFree.svg" alt="">
+                    <p class="text">
+                        <span>*</span> We provide gluten friendly items. Some dishes marked can be customized to be gluten friendly. Please avoid fried items. Cross-contact with ingredients containing gluten is a possibility. Please let your server know if anyone in your party has a food alergy.
+                    </p>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button class="button button-close">close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes-tab hidden" id="empanadaz">
+        <div class="tab-title big">
+            <div class="background">
+                <img src="../../uploads/dishes/title_2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 class="title">
+                    <strong>empanadas & Arepas</strong>
+                </h2>
+            </div>
+            <div class="button-more">
+                <img src="../../img/angle-down-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="cards empanadaz">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/empanadaz_1.jpg" alt="">
+                    </div>
+                    <p class="title-dishes">
+                        Lunch venezuelan empanadas
+                    </p>
+                    <div class="date-wrapper">
+                        <p class="date active">
+                            Available Mon - fri 11:00 am - 2:00 am <span class="adress">brewery district</span> 
+                        </p>
+                        <p class="date">
+                            Available Mon - fri 11:00 am - 2:30 am <span class="adress">Gahanna</span>
+                        </p>
+                    </div>
+                    <p class="description">
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.
+                    </p>
+                    <ul class="list-wrapper">
+                        Mixed
+                        <li class="small-item">
+                            <p class="name">Shredded chicken/beef, black beaans & rice</p>
+                            <div class="dottets"></div>
+                            <p class="price">$9</p>
+                        </li>
+                        <li class="small-item">
+                            <p class="name">Add cheese</p>
+                            <div class="dottets"></div>
+                            <p class="price">+ $1</p>
+                        </li>
+                    </ul>
+                    <ul class="list-wrapper">
+                        Shredded chicken, beef or pork
+                        <li class="small-item">
+                            <p class="name">Meat only</p>
+                            <div class="dottets"></div>
+                            <p class="price">$7</p>
+                        </li>
+                        <li class="small-item">
+                            <p class="name">Meat & cheese</p>
+                            <div class="dottets"></div>
+                            <p class="price">$8</p>
+                        </li>
+                        <li class="small-item">
+                            <p class="name">Add pico de gallo</p>
+                            <div class="dottets"></div>
+                            <p class="price">+ $1.50</p>
+                        </li>
+                    </ul>
+                    <ul class="list-wrapper">
+                        Domino
+                        <li class="small-item">
+                            <p class="name">Black beans & cheese</p>
+                            <div class="dottets"></div>
+                            <p class="price">$5</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/empanadaz_2.jpg" alt="">
+                    </div>
+                    <p class="title-dishes">
+                        venezuelan arepaz <img src="../../img/favorito.svg" alt=""> <img src="../../img/glutenFree.svg" alt=""> <img src="../../img/vegetarian.svg" alt="">
+                    </p>
+                    <p class="date">
+                        AVAILABLE LUNCH AND DINNER
+                    </p>
+                    <p class="description">
+                        Grilled corn meal patty filled with choice of protein, avocado, mozzarella-provolone cheese and pico de Gallo.
+                    </p>
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            <p class="name">Shredded chicken</p>
+                            <div class="dottets"></div>
+                            <p class="price">$8</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Shredded beef</p>
+                            <div class="dottets"></div>
+                            <p class="price">$9</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Shedded pork</p>
+                            <div class="dottets"></div>
+                            <p class="price">$8</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Steak</p>
+                            <div class="dottets"></div>
+                            <p class="price">$9</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Vegetarian</p>
+                            <div class="dottets"></div>
+                            <p class="price">$8</p>
+                            <p class="description">
+                                Grilled peppers & grilled onions, rice & black beans
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="texts-wrapper">
+                Complement your arepas and empanadas with a side for a perfect meal!
+                <a class="sides" id="linkSides">See sides</a>
+            </div>
+            <div class="button-wrap">
+                <button class="button button-close">close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes-tab hidden" id="entradaz">
+        <div class="tab-title big">
+            <div class="background">
+                <img src="../../uploads/dishes/title_3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 class="title">
+                    <strong>entradas</strong>
+                    Entrees
+                </h2>
+            </div>
+            <div class="button-more">
+                <img src="../../img/angle-down-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="cards">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_1.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Avocado bean salad</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img class="ico" src="../../img/favorito.svg" alt=""></div>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Gluten Free</p> <img class="ico" src="../../img/glutenFree.svg" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$9</p>
+                    </div>
+                    <p class="description">
+                        Green leaf lettuce, corn salad, pinto beans, avocado, tomatoes & crisp torillas chips
+                    </p>
+                    <ul class="added-list">
+                        <li class="added-item">
+                            <p class="name">Add shredded chicken</p>
+                            <div class="dottets"></div>
+                            <p class="price">+ $5</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Add grilled veggies</p>
+                            <div class="dottets"></div>
+                            <p class="price">+ $3</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Add steak</p>
+                            <div class="dottets"></div>
+                            <p class="price">+ $6.50</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Add roasted salmon</p>
+                            <div class="dottets"></div>
+                            <p class="price">+ $6.50</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_2.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Bandeja paisa</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img class="ico" src="../../img/favorito.svg" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$18</p>
+                    </div>
+                    <p class="description">
+                        Colombian chorizo, chicharrón, grilled steak, sunny side up egg, fried plantains, rice, pinto beans & arepitas
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_3.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Pabellón criollo</p>
+                        <div class="dottets"></div>
+                        <p class="price">$13</p>
+                    </div>
+                    <p class="description">
+                        Rice, black beans, shredded beef, fried plantains & arepitas
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_4.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Tostada</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Gluten Free</p> <img class="ico" src="../../img/glutenFree.svg" alt=""></div>
+                    </div>
+                    <p class="description">
+                        Corn tostada, black beans, rice, green leaf lettuce, plantain slice, mozzarella-provolone cheese, avocado, sour cream, pico de gallo.
+                    </p>
+                    <ul class="added-list">
+                        <li class="added-item">
+                            <p class="name">Shredded chicken/pork/vegetarian</p>
+                            <div class="dottets"></div>
+                            <p class="price">$13</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Add grilled veggies</p>
+                            <div class="dottets"></div>
+                            <p class="price">$14</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_5.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Fish Tacos</p>
+                        <div class="dottets"></div>
+                        <p class="price">$13</p>
+                    </div>
+                    <p class="description">
+                        Three flour tortillas with breaded cod, green leaf lettuce, pico de gallo & avocado, corn salad
+                    </p>
+                    <ul class="added-list">
+                        <li class="added-item">
+                            <p class="name">Substitute salmon</p>
+                            <div class="dottets"></div>
+                            <p class="price">+$6.50</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Substitute shrimp</p>
+                            <div class="dottets"></div>
+                            <p class="price">+$3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_6.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Chimichurri carne asada</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Gluten Free</p> <img class="ico" src="../../img/glutenFree.svg" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$16</p>
+                    </div>
+                    <p class="description">
+                        Chimichurri grilled steak topped with chimichurri sauce. Served with rice black beans, sunny side up egg & arepitas
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_7.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Cuban sandwich</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img class="ico" src="../../img/favorito.svg" alt=""></div>
+                        <div class="dottets"></div>
+                        <p class="price">$14</p>
+                    </div>
+                    <p class="description">
+                        Ham, shredded pork, Swiss cheese, pickles & mustard served with spanish potato fries
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_8.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">caribbean crab cakes</p>
+                        <div class="dottets"></div>
+                        <p class="price">$15</p>
+                    </div>
+                    <p class="description">
+                        Two crab cakes topped with pico de gallo, mozarella-provolone cheese & avocado. Served with rice, black beans & fried plantains
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_9.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Peruvian lomo saltado</p>
+                        <div class="dottets"></div>
+                        <p class="price">$16</p>
+                    </div>
+                    <p class="description">
+                        Sautéed steak with red wine & soy sauce reduction, onions, tomatoes & fried potatoes. Served with rice, plantains & avocado
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_10.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Chilaquiles</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Spicy</p> <img class="ico" src="../../img/spicy.svg" alt=""></div>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img class="ico" src="../../img/favorito.svg" alt=""></div>
+                    </div>
+                    <p class="description">
+                        Sautéed corn tortillas with a spicy tomatillo sauce. Topped with sour cream, mozzarella-provolone cheese & avocado. Served with plantains, black beans & rice
+                    </p>
+                    <ul class="added-list">
+                        <li class="added-item">
+                            <p class="name">Shredded chicken/pork/or chorizo</p>
+                            <div class="dottets"></div>
+                            <p class="price">$15</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Shredded beef</p>
+                            <div class="dottets"></div>
+                            <p class="price">$16</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_11.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Patacón</p>
+                        <div class="type-wrapper"><img class="triangle" src="../../img/rectangle_hover.svg" alt=""> <p class="hover">Favorito</p> <img class="ico" src="../../img/favorito.svg" alt=""></div>
+                    </div>
+                    <p class="description">
+                        Whole ripe plantain flattened & deep fried topped with mozarella-provolone cheese, green leaf lettuce, pico de gallo & avocado
+                    </p>
+                    <ul class="added-list">
+                        <li class="added-item">
+                            <p class="name">Shredded chicken/pork/or vegetarian</p>
+                            <div class="dottets"></div>
+                            <p class="price">$14</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Shredded beef</p>
+                            <div class="dottets"></div>
+                            <p class="price">$15</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/entradas_12.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">Sweet corn cake</p>
+                    </div>
+                    <p class="description">
+                        Sweet corn cake topped with mozzarella-provolone cheese, green leaf lettuce, pico de gallo, and avocado.
+                    </p>
+                    <ul class="added-list">
+                        <li class="added-item">
+                            <p class="name">Shredded chicken/pork/or vegetarian</p>
+                            <div class="dottets"></div>
+                            <p class="price">$13</p>
+                        </li>
+                        <li class="added-item">
+                            <p class="name">Shredded beef</p>
+                            <div class="dottets"></div>
+                            <p class="price">$14</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="description-wrapper">
+                <div class="item-wrapper">
+                    <p class="item"><img src="../../img/spicy.svg" alt="">- Spicy</p>
+                    <p class="item"><img src="../../img/vegetarian.svg" alt="">- Vegetarian</p>
+                    <p class="item"><img src="../../img/favorito.svg" alt="">- Favorito</p>
+                    <p class="item"><img src="../../img/glutenFree.svg" alt="">- Gluten free <span>*</span></p>
+                </div>
+                <div class="text-wrapper">
+                    <img src="../../img/glutenFree.svg" alt="">
+                    <p class="text">
+                        <span>*</span> We provide gluten friendly items. Some dishes marked can be customized to be gluten friendly. Please avoid fried items. Cross-contact with ingredients containing gluten is a possibility. Please let your server know if anyone in your party has a food alergy.
+                    </p>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button class="button button-close">close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes-tab hidden" id="sides">
+        <div class="tab-title big">
+            <div class="background">
+                <img src="../../uploads/dishes/title_4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 class="title">
+                    <strong>sides</strong>
+                </h2>
+            </div>
+            <div class="button-more">
+                <img src="../../img/angle-down-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="cards sides">
+                <div class="card">
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            <p class="name">Chorizo</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Chicharron</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Shredded chicken</p>
+                            <div class="dottets"></div>
+                            <p class="price">$6</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Shredded pork</p>
+                            <div class="dottets"></div>
+                            <p class="price">$6</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Shredded beef</p>
+                            <div class="dottets"></div>
+                            <p class="price">$7</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">crab Cakes (2)</p>
+                            <div class="dottets"></div>
+                            <p class="price">$9</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Grilled steak</p>
+                            <div class="dottets"></div>
+                            <p class="price">$9</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Rice</p>
+                            <div class="dottets"></div>
+                            <p class="price">$2.5</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Beans: pinto or black</p>
+                            <div class="dottets"></div>
+                            <p class="price">$2.5</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            <p class="name">arepitas</p>
+                            <div class="dottets"></div>
+                            <p class="price">$2</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Tostones</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Yuca</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Fried plantains</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">spanish potato fries</p>
+                            <div class="dottets"></div>
+                            <p class="price">$3</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">avocado</p>
+                            <div class="dottets"></div>
+                            <p class="price">$2.5</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">side salad:</p>
+                            <div class="dottets"></div>
+                            <p class="price">$5</p>
+                            <p class="description">
+                                Green leaf lettuce, pico de gallo
+                            </p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Grilled veggies:</p>
+                            <div class="dottets"></div>
+                            <p class="price">$3</p>
+                            <p class="description">
+                                Onions, red & green bell peppers
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side-description">
+                <span>*</span> 20% Gratuity will be added to parties of 6 or more. Consuming raw or under cooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness.
+            </div>
+            <div class="button-wrap">
+                <button class="button button-close">close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes-tab hidden" id="juice">
+        <div class="tab-title big">
+            <div class="background">
+                <img src="../../uploads/dishes/title_5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2 class="title">
+                    <strong>Jugos Naturales, Café y té,
+                        Postres</strong>
+                        Natural Juices, Coffee and tea, Desserts
+                </h2>
+            </div>
+            <div class="button-more">
+                <img src="../../img/angle-down-solid.svg" alt="">
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="cards dessert">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dessert_1.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name green">
+                            Jugos Naturales
+                        </p>
+                        <div class="text">
+                            Mango, blackberry, guava, guanabana, passion fruit
+                        </div>
+                    </div>
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            <p class="name">Con leche</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4.50</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Con agua</p>
+                            <div class="dottets"></div>
+                            <p class="price">$4</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dessert_2.jpg" alt="">
+                    </div>
+
+                    <div class="title-wrapper">
+                        <p class="name red">
+                            Café y té
+                        </p>
+                    </div>
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            <p class="name">Americano</p>
+                            <div class="dottets"></div>
+                            <p class="price">$3</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Espresso</p>
+                            <div class="dottets"></div>
+                            <p class="price">$2</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Cappuccino</p>
+                            <div class="dottets"></div>
+                            <p class="price">$3</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Late</p>
+                            <div class="dottets"></div>
+                            <p class="price">$3</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Corto cuban</p>
+                            <div class="dottets"></div>
+                            <p class="price">$3</p>
+                        </li>
+                        <li class="list-item">
+                            <p class="name">Ask for our assortment of teas</p>
+                            <div class="dottets"></div>
+                            <p class="price">$2.50</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="../../uploads/dishes/dessert_3.jpg" alt="">
+                    </div>
+                    <div class="title-wrapper">
+                        <p class="name">
+                            Postres
+                        </p>
+                    </div>
+                    <ul class="list-wrapper">
+                        <li class="list-item">
+                            <p class="name">TRES LECHES NO WHIPPED CREAM</p>
+                            <div class="dottets"></div>
+                            <p class="price">$7</p>
+                            <p class="description">
+                                Rich cake soaked in a sweet creamy blend of 3 different milks, topped with cinnamon sugar & whipped cream
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button class="button button-close">close</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,205 @@
+<% var data = {
+    title: "Arepazo",
+    
+    home: " class='list-item'",
+    menu: " class='list-item'",
+    about: " class='list-item'",
+    order: " class='list-item'",
+    contact: " class='list-item active'",
+    happy: " class='list-item'",
+    catering: " class='list-item'",
+
+    main: " class=''",
+  };
+%>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="main-window-half">
+  <div class="background-image">
+    <img src="../../uploads/bground_contact.jpg" alt="">  
+  </div>
+  <div class="container">
+    <h1 class="title">
+      <strong>Contact Us</strong>
+    </h1>
+  </div>
+</section>
+
+<section class="locations">
+  <div class="contact-wrapper">
+    <div class="wrap">
+      <div class="description">
+        <h3 class="adress">
+          arepazo brewery district:
+        </h3>
+        <a class="map" href="https://g.page/arepazo?share" target="_blank">
+          515 S High street, Columbus OH
+          <span class="button">Get Directions</span>
+        </a>
+        <div class="work-data">
+          <ul class="list-wrapper">
+            <li class="list-item">
+              <span class="day">Monday - Thursday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:00 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:00 pm
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <span class="day">Friday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:00 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+            
+            <li class="list-item">
+              <span class="day">Saturday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  1:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+          </ul>
+          *Private room and reservations available at this location only
+        </div>
+        <a href="teltel:(614) 914-8878" class="phone">(614) 914-8878</a>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1529.2740168150658!2d-82.9988697!3d39.9514983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe57e00dcb6ae55d2!2sArepazo%20Tapas%20Bar%20Grille!5e0!3m2!1sen!2sua!4v1602168327010!5m2!1sen!2sua" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d763.8705388254111!2d-82.8784847!3d40.0200133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28c3f13336d1e285!2sArepazo%20Tapas%20and%20Wine!5e0!3m2!1sen!2sua!4v1602168147873!5m2!1sen!2sua" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <div class="description">
+        <h3 class="adress">
+            arepazo gahanna:
+        </h3>
+        <a class="map" href="https://g.page/arepazo-tapas-and-wine?share" target="_blank">
+          93 N High street, Gahanna OH
+          <span class="button">Get Directions</span>
+        </a>
+        <div class="work-data">
+          <ul class="list-wrapper">
+            <li class="list-item">
+              <span class="day">Monday - Thursday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:30 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:00 pm
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <span class="day">Friday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  <span class="days-time">
+                    Lunch
+                  </span>
+                  11:00 am - 2:30 pm
+                </li>
+                <li class="min-item">
+                  <span class="days-time">
+                    Dinner
+                  </span>
+                  5:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+            
+            <li class="list-item">
+              <span class="day">Saturday</span>
+              <ul class="min-list">
+                <li class="min-item">
+                  1:00 pm - 9:30 pm
+                </li>
+              </ul>
+            </li>
+          </ul>
+          *no reservations available at this location without the "only"
+        </div>
+        <a href="tel:(614) 471-7296" class="phone">(614) 471-7296</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="container">
+    <h2 class="location-title">
+      Send Us A Message
+    </h2>
+    <form action="" class="form">
+      <div class="input-wrapper">
+        <label for="">Name*</label>
+        <input type="text" class="name">
+      </div>
+      <div class="input-wrapper">
+        <label for="">Email*</label>
+        <input type="email" class="mail">
+      </div>
+      <div class="input-wrapper">
+        <label for="">Phone</label>
+        <input type="tel" class="phone" placeholder="(___) - ___-____" data-mask="(000) - 000-0000" >
+      </div>
+      <div class="textarea-wrapper">
+        <label for="">Message*</label>
+        <textarea name="" id="" class="message"></textarea>
+      </div>
+      <div class="button-wrapper">
+        <button type="submit" class="submit">submit</button>
+        <p class="required">
+          *Required fields
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="restaurant">
+  <div class="images">
+    <div class="img-wrapper"><img src="../../uploads/restaurant_1.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_2.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_3.jpg" alt=""></div>
+    <div class="img-wrapper"><img src="../../uploads/restaurant_4.jpg" alt=""></div>
+  </div>
+  <a href="" class="link">@arepazorestaurants</a>
+</section>
+
+<section>
+  <div id="instafeed"></div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

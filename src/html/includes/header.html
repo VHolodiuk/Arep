@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Arepazo">
+  <meta name="keywords" content="Arepazo">
+  <link rel="shortcut icon" href="./favicon/ico.svg" type="image/ico"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <title><%=title%></title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo-min"><img src="../../img/logo_min.svg" alt=""></a>
+      <div class="inputs-wrapper hidden">
+        <div class="adress-ico">
+          <img src="../../img/map.svg" alt="">
+        </div>
+        <ul class="dropdown-list">
+          <li class="active" data-lat="39.948350" data-long="-83.004935">brewery district</li> 
+          <li class="" data-lat="40.019190" data-long="-82.878916">Gahanna</li>
+        </ul> 
+      </div>
+      <div class="menu-wrapper">
+        <ul class="list-wrapper">
+          <li <%=home%>><a href="index.html">Home</a></li>
+          <li <%=menu%>><a href="menu.html">Menu</a></li>
+          <li <%=order%>><a href="https://direct.chownow.com/order/21487/locations" target="_blank">Order online</a></li>
+          <li <%=happy%>><a href="happyHour.html">Happy Hour</a></li>
+          <li <%=catering%>><a href="catering.html">catering & parties</a></li>
+          <li <%=about%>><a href="about.html">about us</a></li>
+          <li <%=contact%>><a href="contactUs.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="link-wrapper">
+        <ul class="list-wrapper">
+          <li class="list-item"><a href=""><img src="../../img/social/instagram.svg" alt=""></a></li>
+          <li class="list-item"><a href="https://www.facebook.com/Arepazo"><img src="../../img/social/facebook.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <div class="lines">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="welcome-popup hidden">
+      <div class="wrapper">
+        <p class="popup-title">
+          Welcome Covid 19 Response or Offer Chownow <span>10% OFF</span>
+        </p>
+        <p class="text">
+          All locations are currently open for carry-out and/or curbside carry-out and delivery (where available). Some locations have other dining options (see Location Updates). Check our location pages for hours of operation.We are doing everything in accordance with local, state and federal health officials to keep our employees and customers safe. 
+        </p>
+        <p class="thanks-text">
+          Thank you for continuing to support local businesses as much as possible.
+        </p>
+        <div class="close">
+          <img src="../../img/close.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main <%=main%>>
